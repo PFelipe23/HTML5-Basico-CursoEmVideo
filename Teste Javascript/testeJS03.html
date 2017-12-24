@@ -5,11 +5,11 @@
     <title>Lamp Test</title>
     <script>
         var broken = false;
-        function changeStatus(type) {
+        function changeStatus(status) {
             if (!broken) {
-                document.getElementById("light").src = "_imagens/" + type + ".jpg";
+                document.getElementById("light").src = "_imagens/" + status + ".jpg";
                 
-                if (tipo == "broken") {
+                if (status == 'broken') {
                     broken = true;
                 }
             }
