@@ -2,24 +2,25 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Teste Javascript</title>
+    <title>Lamp Test</title>
     <script>
-        function acendeLampada() {
-            document.getElementById("luz").src = "_imagens/ligada.jpg";
-        }
-        function apagaLampada() {
-            document.getElementById("luz").src = "_imagens/apagada.jpg";
-        }
-        function quebraLampada() {
-            document.getElementById("luz").src = "_imagens/quebrada.jpg";
+        var broken = false;
+        function changeStatus(type) {
+            if (!broken) {
+                document.getElementById("light").src = "_imagens/" + type + ".jpg";
+                
+                if (tipo == "broken") {
+                    broken = true;
+                }
+            }
         }
     </script>
 </head>
 <body>
-    <h1>Acenda a lâmpada</h1>
-    <img src="_imagens/apagada.jpg" id="luz" 
-        onmousemove="acendeLampada()"
-        onmouseout="apagaLampada()"
-        onclick="quebraLampada()">
+    <h1>Turn on the Lamp!</h1>
+    <img src="_imagens/off.jpg" id="light" 
+        onmousemove="changeStatus('on')"
+        onmouseout="changeStatus('off')"
+        onclick="changeStatus('broken')">
 </body>
 </html>
