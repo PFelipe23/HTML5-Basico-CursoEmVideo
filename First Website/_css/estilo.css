@@ -57,7 +57,7 @@ header#cabecalho h2 {
 
 header#cabecalho img#icone {
     position: absolute;
-    right: 100px;
+    left: 800px;
     top: 50px;
 }
 
@@ -101,7 +101,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    right: 150px;
+    left: 450px;
 }
 
 nav#menu li:hover {
@@ -128,6 +128,8 @@ nav#menu a {
 nav#menu a:hover {
     color: white;
 }
+
+/* FORMATAÇÃO SEÇÕES DA PÁGINA */
 
 section#corpo {
     display: block;
