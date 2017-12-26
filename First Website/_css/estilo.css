@@ -236,4 +236,10 @@ footer#rodape {
     clear: both;
     border-top: 1px solid #606060;
     padding-top: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+footer#rodape p {
+    text-align: center;
 }
